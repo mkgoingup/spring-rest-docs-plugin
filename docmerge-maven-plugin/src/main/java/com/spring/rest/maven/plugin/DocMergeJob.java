@@ -23,19 +23,20 @@ public class DocMergeJob extends AbstractMojo {
     /**
      * 当前工程目录
      */
-    private String appDir = System.getProperty("user.dir");
+    @Parameter(defaultValue = "${basedir}")
+    private String appDir;
 
     /**
      * 合并后的adoc配置路径，使用asciidoctor-maven-plugin的默认配置文件读取路径
      */
-    @Parameter
-    private String outputDirectory = appDir + "/src/main/asciidoc";
+    @Parameter(defaultValue = "${basedir}/src/main/asciidoc")
+    private String outputDirectory;
 
     /**
      * 需要合并的片断文件目录
      */
-    @Parameter
-    private String sourceDirectory = appDir + "/target/generated-snippets";
+    @Parameter(defaultValue = "${basedir}/target/generated-snippets")
+    private String sourceDirectory;
 
     /**
      * 生成api配置文件的名称
