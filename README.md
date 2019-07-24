@@ -4,7 +4,7 @@ spring rest docs 的maven 插件,自动合并碎片文档
 结合asciidoctor-maven-plugin插件自动生成api的HTML文档
 
 配置示例：
-
++++
 <plugin>
     <groupId>com.spring.rest.maven.plugin</groupId>
     <artifactId>docmerge-maven-plugin</artifactId>
@@ -19,3 +19,4 @@ spring rest docs 的maven 插件,自动合并碎片文档
          </execution>
     </executions>
 </plugin>
++++
