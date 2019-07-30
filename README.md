@@ -1,5 +1,5 @@
 # spring-rest-docs-plugin
-##功能
+## 功能
 spring rest docs 的maven 插件,自动合并碎片文档
 
 结合asciidoctor-maven-plugin插件自动生成api的HTML文档，合并的碎片文档包括:
@@ -26,7 +26,7 @@ response-fields.adoc
 ```
 <br>maven插件的执行阶段配置在test之前package之后，且在asciidoctor-maven-plugin插件之前(同阶段的插件按配置顺序执行)
 
-##maven插件配置示例：
+## maven插件配置示例：
 ```插件配置示例
 <plugin>
     <groupId>com.spring.rest.maven.plugin</groupId>
@@ -44,7 +44,7 @@ response-fields.adoc
 </plugin>
 ```
 
-##配置参数说明:
+## 配置参数说明:
 <br>1.appDir：当前工程目录，默认自动为pom.xml文件所在目录${basedir}
 ```示例
 <execution>
