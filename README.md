@@ -23,7 +23,7 @@ spring rest docs 的maven 插件,自动合并碎片文档
 
 配置参数说明:
 <br>1.appDir：当前工程目录，默认自动为pom.xml文件所在目录${basedir}
-···示例
+```示例
 <execution>
     <configuration>     
         <appDir>${basedir}</appDir>
@@ -32,7 +32,7 @@ spring rest docs 的maven 插件,自动合并碎片文档
      ......
 </execution>
 
-···
+```
 <br>outputDirectory：合并后的adoc配置文件路径，默认使用${basedir}/src/main/asciidoc
 <br>sourceDirectory：需要合并的片断文件目录，默认使用${basedir}/target/generated-snippets
 <br>docName：生成api配置文件的名称，默认使用openApi.adoc
