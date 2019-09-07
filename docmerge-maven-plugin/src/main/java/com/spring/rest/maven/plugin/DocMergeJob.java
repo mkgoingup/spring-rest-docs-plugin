@@ -81,19 +81,26 @@ public class DocMergeJob extends AbstractMojo {
         //通过list保证输出顺序
         docList.add("curl-request.adoc");
         docList.add("http-request.adoc");
+        docList.add("httpie-request.adoc");
         docList.add("request-headers.adoc");
         docList.add("request-parameters.adoc");
         docList.add("request-body.adoc");
+        docList.add("response-body.adoc");
         docList.add("http-response.adoc");
+        docList.add("request-fields.adoc");
         docList.add("response-fields.adoc");
 
         docDescMap.put("curl-request.adoc",".curl请求示例");
-        docDescMap.put("http-request.adoc",".http请求示例");
-        docDescMap.put("request-headers.adoc",".请求头说明");
+        docDescMap.put("http-request.adoc",".请求url、header及示例");
+        docDescMap.put("httpie-request.adoc",".httpie请求示例");
+        docDescMap.put("request-headers.adoc",".header说明");
         docDescMap.put("request-parameters.adoc",".请求参数说明");
-        docDescMap.put("request-body.adoc",".请求体说明");
+        docDescMap.put("request-body.adoc",".body说明");
         docDescMap.put("http-response.adoc",".返回内容示例");
+        docDescMap.put("request-fields.adoc",".请求字段说明");
         docDescMap.put("response-fields.adoc",".返回值说明");
+        docDescMap.put("response-body.adoc",".返回结果示例");
+
     }
 
     /**
