@@ -83,6 +83,7 @@ public class DocMergeJob extends AbstractMojo {
         docList.add("http-request.adoc");
         docList.add("httpie-request.adoc");
         docList.add("request-headers.adoc");
+        docList.add("path-parameters.adoc");
         docList.add("request-parameters.adoc");
         docList.add("request-body.adoc");
         docList.add("response-body.adoc");
@@ -94,6 +95,7 @@ public class DocMergeJob extends AbstractMojo {
         docDescMap.put("http-request.adoc",".请求url、header及示例");
         docDescMap.put("httpie-request.adoc",".httpie请求示例");
         docDescMap.put("request-headers.adoc",".header说明");
+        docDescMap.put("path-parameters.adoc",".路径参数说明");
         docDescMap.put("request-parameters.adoc",".请求参数说明");
         docDescMap.put("request-body.adoc",".body说明");
         docDescMap.put("http-response.adoc",".返回内容示例");
